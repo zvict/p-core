@@ -254,7 +254,11 @@
       <style>
         /* reserve a band below each slide so the bottom:0 pagination dots clear the images/captions */
         #results-carousel .slider-item,
-        #results-carousel .item { padding-bottom: 3.5rem; }
+        #results-carousel .item { padding-bottom: 1.5rem; }
+        /* stronger shadow so the white pagination dots stand out */
+        #results-carousel .slider-pagination .slider-page {
+          box-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
+        }
       </style>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
