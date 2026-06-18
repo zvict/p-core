@@ -244,33 +244,73 @@
 
 
 <!-- Qualitative results carousel -->
-<section class="hero is-small" style="margin-top:3rem;">
+<section class="hero is-small" style="margin-top:0rem;">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
       <p class="subtitle is-6 has-text-centered">
         Zero-shot non-rigid edits, compared against GT, PAPR, SC-GS, and Mani-GS.
       </p>
+      <style>
+        /* push the carousel pagination dots clear of the images */
+        #results-carousel { padding-bottom: 2.5rem; }
+      </style>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
-          <img src="static/images/results/panel_butterfly.jpg" alt="Butterfly editing comparison" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">Butterfly (Objaverse) — wings folded; P-CORE keeps surfaces intact.</h2>
+          <img src="static/images/results/panel_ne_chair.jpg" alt="Chair editing comparison (Neural Editor)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Chair (Neural Editor) — zero-shot edit</h2>
         </div>
         <div class="item">
-          <img src="static/images/results/panel_dolphin.jpg" alt="Dolphin editing comparison" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">Dolphin (Objaverse) — large bending without tears.</h2>
+          <img src="static/images/results/panel_ne_drums.jpg" alt="Drums editing comparison (Neural Editor)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Drums (Neural Editor) — zero-shot edit</h2>
         </div>
         <div class="item">
-          <img src="static/images/results/panel_giraffe.jpg" alt="Giraffe editing comparison" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">Giraffe (Objaverse) — thin structures stay connected.</h2>
+          <img src="static/images/results/panel_ne_ficus.jpg" alt="Ficus editing comparison (Neural Editor)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Ficus (Neural Editor) — zero-shot edit</h2>
         </div>
         <div class="item">
-          <img src="static/images/results/panel_chair.jpg" alt="Chair editing comparison" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">Chair (Neural Editor) — clean geometry under deformation.</h2>
+          <img src="static/images/results/panel_ne_hotdog.jpg" alt="Hotdog editing comparison (Neural Editor)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Hotdog (Neural Editor) — zero-shot edit</h2>
         </div>
         <div class="item">
-          <img src="static/images/results/panel_lego.jpg" alt="Lego editing comparison" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">Lego (Neural Editor) — fewer artifacts than baselines.</h2>
+          <img src="static/images/results/panel_ne_lego.jpg" alt="Lego editing comparison (Neural Editor)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Lego (Neural Editor) — zero-shot edit</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/results/panel_ne_materials.jpg" alt="Materials editing comparison (Neural Editor)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Materials (Neural Editor) — zero-shot edit</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/results/panel_ne_mic.jpg" alt="Mic editing comparison (Neural Editor)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Mic (Neural Editor) — zero-shot edit</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/results/panel_ne_ship.jpg" alt="Ship editing comparison (Neural Editor)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Ship (Neural Editor) — zero-shot edit</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/results/panel_oj_butterfly.jpg" alt="Butterfly editing comparison (Objaverse)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Butterfly (Objaverse) — zero-shot edit</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/results/panel_oj_crab.jpg" alt="Crab editing comparison (Objaverse)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Crab (Objaverse) — zero-shot edit</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/results/panel_oj_dolphin.jpg" alt="Dolphin editing comparison (Objaverse)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Dolphin (Objaverse) — zero-shot edit</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/results/panel_oj_giraffe.jpg" alt="Giraffe editing comparison (Objaverse)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Giraffe (Objaverse) — zero-shot edit</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/results/panel_oj_lego.jpg" alt="Lego editing comparison (Objaverse)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Lego (Objaverse) — zero-shot edit</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/results/panel_oj_legoman.jpg" alt="Legoman editing comparison (Objaverse)" loading="lazy"/>
+          <h2 class="subtitle has-text-centered">Legoman (Objaverse) — zero-shot edit</h2>
         </div>
       </div>
     </div>
@@ -282,14 +322,14 @@
 <!-- Quantitative results -->
 <section class="section">
   <style>
-    #quant-table td.cell-best { background:#2563eb; color:#fff; font-weight:700; }
+    #quant-table td.cell-best { background:#497be8; color:#fff; font-weight:700; }
     #quant-table td.cell-2nd  { background:#bfdbfe; color:#0b285c; font-weight:600; }
   </style>
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
     <p class="subtitle is-6 has-text-centered">
-      Average performance on the Neural Editor and Objaverse datasets across all scenes.&nbsp;
-      <span style="background:#2563eb;color:#fff;padding:0 .45em;border-radius:3px;">best</span>,
+      Average performance on the Neural Editor dataset and an Objaverse subset across all scenes.&nbsp;
+      <span style="background:#497be8;color:#fff;padding:0 .45em;border-radius:3px;">best</span>,
       <span style="background:#bfdbfe;color:#0b285c;padding:0 .45em;border-radius:3px;">second best</span>.
     </p>
     <div class="table-container">
@@ -298,11 +338,11 @@
           <tr>
             <th rowspan="2" class="has-text-left" style="vertical-align:middle;">Method</th>
             <th colspan="4">Neural Editor</th>
-            <th colspan="4">Objaverse</th>
+            <th colspan="4">Objaverse (PAPR-in-Motion subset)</th>
           </tr>
           <tr>
-            <th>PSNR&nbsp;&uarr;</th><th>SSIM&nbsp;&uarr;</th><th>LPIPS&nbsp;&darr;</th><th>#&nbsp;Prim.</th>
-            <th>PSNR&nbsp;&uarr;</th><th>SSIM&nbsp;&uarr;</th><th>LPIPS&nbsp;&darr;</th><th>#&nbsp;Prim.</th>
+            <th>PSNR&nbsp;&uarr;</th><th>SSIM&nbsp;&uarr;</th><th>LPIPS&nbsp;&darr;</th><th>#&nbsp;Primitive</th>
+            <th>PSNR&nbsp;&uarr;</th><th>SSIM&nbsp;&uarr;</th><th>LPIPS&nbsp;&darr;</th><th>#&nbsp;Primitive</th>
           </tr>
         </thead>
         <tbody>
