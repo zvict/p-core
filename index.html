@@ -56,9 +56,8 @@
 
   <title>P-CORE: Self-Supervised Surface Consistency for Point-Based Neural Editing | ECCV 2026</title>
   
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <!-- Favicon (3D/surface emoji) -->
+  <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -139,31 +138,28 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">P-CORE: Self-Supervised Surface Consistency for Point-Based Neural Editing</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: author homepage -->
-              <span class="author-block"><a href="#" target="_blank">Yanshu Zhang</a>,</span>
-              <!-- TODO: author homepage -->
-              <span class="author-block"><a href="#" target="_blank">Shichong Peng</a>,</span>
-              <!-- TODO: author homepage -->
-              <span class="author-block"><a href="#" target="_blank">Mehran Aghabozorgi</a>,</span>
-              <!-- TODO: author homepage -->
-              <span class="author-block"><a href="#" target="_blank">Alireza Moazeni</a>,</span>
-              <!-- TODO: author homepage -->
-              <span class="author-block"><a href="#" target="_blank">Ke Li</a></span>
+              <span class="author-block"><a href="https://zvict.github.io/" target="_blank">Yanshu Zhang</a>,</span>
+              <span class="author-block"><a href="https://sites.google.com/view/niopeng/home" target="_blank">Shichong Peng</a>,</span>
+              <span class="author-block"><a href="https://sfuapex.ca/author/mehran-aghabozorgi/" target="_blank">Mehran Aghabozorgi</a>,</span>
+              <span class="author-block"><a href="https://amoazeni75.github.io/" target="_blank">Alireza Moazeni</a>,</span>
+              <span class="author-block"><a href="https://www.sfu.ca/~keli/" target="_blank">Ke Li</a></span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Simon Fraser University</span><br>
-              <span class="author-block">ECCV 2026</span>
+              <span class="author-block">Simon Fraser University</span>
+            </div>
+            <div class="has-text-centered" style="margin-top:0.6rem;margin-bottom:0.4rem;">
+              <img src="static/images/eccv-2026.png" alt="ECCV 2026" style="display:inline-block;width:300px;max-width:75%;height:auto;"/>
             </div>
 
             <div class="column has-text-centered">
-              <div class="publication-links">
+              <div class="publication-links" style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:1rem;">
                 <!-- Paper PDF -->
                 <span class="link-block">
                   <a href="static/pdfs/pcore_eccv2026.pdf" target="_blank"
-                     class="external-link button is-normal is-rounded is-dark">
+                     class="external-link button is-normal is-rounded is-dark" style="margin:0;">
                     <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                    <span>Paper</span>
+                    <span>Paper (21&nbsp;MB)</span>
                   </a>
                 </span>
                 <!-- arXiv: coming soon -->
@@ -193,12 +189,12 @@
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
+  <div class="container" style="max-width:1440px;">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop playsinline height="100%" preload="metadata">
+      <video poster="" id="tree" autoplay controls muted loop playsinline preload="metadata" style="display:block;width:100%;height:auto;">
         <source src="static/videos/video.mp4" type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-centered" style="margin-top:0.3rem;">
         P-CORE enables zero-shot, free-form non-rigid editing of point-based neural scenes — keeping surfaces hole-free and consistent under large deformations.
       </h2>
     </div>
@@ -329,12 +325,6 @@
     </div>
   </div>
 </footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>
