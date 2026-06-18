@@ -192,7 +192,7 @@
   <div class="container" style="max-width:1440px;">
     <div class="hero-body">
       <h2 class="subtitle has-text-centered" style="margin-bottom:2rem;">
-        P-CORE enables <b>zero-shot, free-form</b> non-rigid editing of point-based neural scenes — keeping surfaces hole-free under large deformations. 
+        P-CORE enables <b>zero-shot, free-form non-rigid editing</b> of point-based neural scenes — keeping surfaces hole-free under large deformations. 
       </h2>
       <video poster="" id="tree" autoplay controls muted loop playsinline preload="metadata" style="display:block;width:100%;height:auto;">
         <source src="static/videos/video.mp4" type="video/mp4">
@@ -281,14 +281,19 @@
 
 <!-- Quantitative results -->
 <section class="section">
+  <style>
+    #quant-table td.cell-best { background:#2563eb; color:#fff; font-weight:700; }
+    #quant-table td.cell-2nd  { background:#bfdbfe; color:#0b285c; font-weight:600; }
+  </style>
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
     <p class="subtitle is-6 has-text-centered">
-      Average performance on the Neural Editor and Objaverse datasets across all scenes.
-      <strong>Bold</strong> = best, <u>underline</u> = second best.
+      Average performance on the Neural Editor and Objaverse datasets across all scenes.&nbsp;
+      <span style="background:#2563eb;color:#fff;padding:0 .45em;border-radius:3px;">best</span>,
+      <span style="background:#bfdbfe;color:#0b285c;padding:0 .45em;border-radius:3px;">second best</span>.
     </p>
     <div class="table-container">
-      <table class="table is-bordered is-narrow is-hoverable has-text-centered" style="margin:0 auto;">
+      <table id="quant-table" class="table is-bordered is-narrow has-text-centered" style="margin:0 auto;">
         <thead>
           <tr>
             <th rowspan="2" class="has-text-left" style="vertical-align:middle;">Method</th>
@@ -302,11 +307,11 @@
         </thead>
         <tbody>
           <tr><td class="has-text-left">Deforming-NeRF</td><td>14.71</td><td>0.722</td><td>0.197</td><td>&mdash;</td><td>15.89</td><td>0.773</td><td>0.180</td><td>&mdash;</td></tr>
-          <tr><td class="has-text-left">Neural Editor</td><td><strong>25.62</strong></td><td><u>0.939</u></td><td>0.078</td><td>~1M</td><td><u>28.02</u></td><td><u>0.956</u></td><td><u>0.048</u></td><td>~1M</td></tr>
+          <tr><td class="has-text-left">Neural Editor</td><td class="cell-best">25.62</td><td class="cell-2nd">0.939</td><td>0.078</td><td>~1M</td><td class="cell-2nd">28.02</td><td class="cell-2nd">0.956</td><td class="cell-2nd">0.048</td><td>~1M</td></tr>
           <tr><td class="has-text-left">SC-GS</td><td>18.55</td><td>0.832</td><td>0.123</td><td>~236K</td><td>25.29</td><td>0.929</td><td>0.057</td><td>~228K</td></tr>
           <tr><td class="has-text-left">Mani-GS</td><td>20.59</td><td>0.875</td><td>0.116</td><td>~1.2M</td><td>26.04</td><td>0.946</td><td>0.069</td><td>~362K</td></tr>
-          <tr><td class="has-text-left">PAPR</td><td>24.22</td><td>0.930</td><td><u>0.066</u></td><td>30K</td><td>23.15</td><td>0.940</td><td>0.058</td><td>30K</td></tr>
-          <tr><td class="has-text-left"><strong>Ours</strong></td><td><u>25.31</u></td><td><strong>0.942</strong></td><td><strong>0.054</strong></td><td>30K</td><td><strong>28.30</strong></td><td><strong>0.965</strong></td><td><strong>0.039</strong></td><td>30K</td></tr>
+          <tr><td class="has-text-left">PAPR</td><td>24.22</td><td>0.930</td><td class="cell-2nd">0.066</td><td>30K</td><td>23.15</td><td>0.940</td><td>0.058</td><td>30K</td></tr>
+          <tr><td class="has-text-left"><strong>Ours</strong></td><td class="cell-2nd">25.31</td><td class="cell-best">0.942</td><td class="cell-best">0.054</td><td>30K</td><td class="cell-best">28.30</td><td class="cell-best">0.965</td><td class="cell-best">0.039</td><td>30K</td></tr>
         </tbody>
       </table>
     </div>
