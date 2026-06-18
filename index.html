@@ -251,6 +251,11 @@
       <p class="subtitle is-6 has-text-centered">
         Zero-shot non-rigid edits, compared against GT, PAPR, SC-GS, and Mani-GS.
       </p>
+      <style>
+        /* reserve a band below each slide so the bottom:0 pagination dots clear the images/captions */
+        #results-carousel .slider-item,
+        #results-carousel .item { padding-bottom: 3.5rem; }
+      </style>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <img src="static/images/results/panel_ne_chair.jpg" alt="Chair editing comparison (Neural Editor)" loading="lazy"/>
