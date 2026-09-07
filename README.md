@@ -1,5 +1,5 @@
 # P-CORE: Self-Supervised Surface Consistency for Point-Based Neural Editing (ECCV 2026)
-[Yanshu Zhang](https://zvict.github.io/)<sup>1†</sup>, [Shichong Peng](https://sites.google.com/view/niopeng/home)<sup>1</sup>, Mehran Aghabozorgi<sup>1</sup>, [Alireza Moazeni](https://amoazeni75.github.io/)<sup>1</sup>, [Ke Li](https://www.sfu.ca/~keli/)<sup>1,2,3</sup><br>
+[Yanshu Zhang](https://zvict.github.io/)<sup>1†</sup>, [Shichong Peng](https://sites.google.com/view/niopeng/home)<sup>1</sup>, [Mehran Aghabozorgi](https://sfuapex.ca/author/mehran-aghabozorgi/)<sup>1</sup>, [Alireza Moazeni](https://amoazeni75.github.io/)<sup>1</sup>, [Ke Li](https://www.sfu.ca/~keli/)<sup>1,2,3</sup><br>
 <sup>1</sup>Simon Fraser University &nbsp;&nbsp; <sup>2</sup>Amii &nbsp;&nbsp; <sup>3</sup>CIFAR &nbsp;&nbsp; (<sup>†</sup>corresponding author)<br>
 
 <img src="./images/SFU_AI.png" height=100px /><img src="images/APEX_lab.png" height=120px />
