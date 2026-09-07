@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use P-CORE, please cite the ECCV 2026 paper."
+type: software
+title: "P-CORE: Self-Supervised Surface Consistency for Point-Based Neural Editing"
+version: 0.1.0
+license: MIT
+date-released: 2026-08-20
+authors:
+  - family-names: Zhang
+    given-names: Yanshu
+    orcid: "https://orcid.org/0009-0002-6046-3966"
+  - family-names: Peng
+    given-names: Shichong
+    orcid: "https://orcid.org/0009-0005-8404-6392"
+  - family-names: Aghabozorgi
+    given-names: Mehran
+    orcid: "https://orcid.org/0009-0007-0447-1116"
+  - family-names: Moazeni
+    given-names: Alireza
+    orcid: "https://orcid.org/0009-0002-6532-0112"
+  - family-names: Li
+    given-names: Ke
+    orcid: "https://orcid.org/0000-0002-3229-271X"
+preferred-citation:
+  type: conference-paper
+  title: "P-CORE: Self-Supervised Surface Consistency for Point-Based Neural Editing"
+  authors:
+    - family-names: Zhang
+      given-names: Yanshu
+    - family-names: Peng
+      given-names: Shichong
+    - family-names: Aghabozorgi
+      given-names: Mehran
+    - family-names: Moazeni
+      given-names: Alireza
+    - family-names: Li
+      given-names: Ke
+  collection-title: "European Conference on Computer Vision (ECCV)"
+  year: 2026

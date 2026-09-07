@@ -1,0 +1,21 @@
+# Install torch and torchvision FIRST, using a CUDA build that matches the host,
+# then run `pip install -r requirements.txt`. They are left commented out here so
+# that pip cannot pull a default PyPI wheel over a working CUDA build; the
+# specifiers below are the supported range and the index URL is the CUDA 12.8
+# example this release was tested with.
+# --extra-index-url https://download.pytorch.org/whl/cu128
+# torch>=2.5,<2.11
+# torchvision>=0.20,<0.26  # never imported by this code; lpips needs it, so its version must match the torch build
+#
+# pytorch3d and tiny-cuda-nn are built from source against that same torch and
+# CUDA toolkit (see the README install steps); pip cannot resolve them, so they
+# are deliberately not listed below.
+
+imageio>=2.33
+lpips==0.1.4
+numpy>=1.25,<3
+open3d>=0.18
+Pillow>=10
+piq==0.8.0
+PyYAML>=6
+scipy>=1.11

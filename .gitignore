@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Datasets, checkpoints, and run outputs.  Anchored to the repository root so
+# they cannot match the `dataset/` package directory, and written without a
+# trailing slash so they also match a symlink -- large datasets are routinely
+# linked in rather than copied, and a trailing-slash pattern matches only real
+# directories.
+/data
+/datasets
+/2dgs
+/checkpoints
+/edits
+/experiments
+/results
+/outputs
